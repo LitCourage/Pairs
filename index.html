@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+</head>
+<body>
+    <div class="wrapper centring">
+        <div class="bg-image-block bg-image"></div>
+        <div class="entry-form-container ui-border ui-background" hidden>
+            <form class="entry-form">
+                <header class="centring ui-font">PAIRS</header>
+                <label class="ui-font">
+                    pairs quantity
+                    <span id="pairs-quantity">2</span>
+                    <input class="bg-image ui-border-inset" type="range" min="2" max="6" value="2" step="2">
+                </label>
+                <button class="ui-font ui-border-inset bg-image" type="submit">Begin</button>
+            </form>
+        </div>
+        <div class="game-container ui-border ui-background" hidden>
+            <header class="game-header centring ui-font">
+                <p class="game-steps centring">steps: 0</p>
+                <h1 class="game-title centring">PAIRS</h1>
+                <p class="game-time centring"></p>
+            </header>
+            <main class="game-field">
+
+            </main>
+            <div class="button-box centring">
+                <button class="play-again-button ui-font ui-border-inset bg-image">Play again</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
