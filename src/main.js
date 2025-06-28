@@ -187,6 +187,8 @@ function loadGameField(pairsQuantity) {
 function loadStartMenu() {
     document.querySelector('.entry-form-container').hidden = false;
     document.querySelector('.game-container').hidden = true;
+    document.querySelector('.entry-form label input').value = 2;
+    document.querySelector('.entry-form label span').innerText = 2;
 
     setup()
 }
