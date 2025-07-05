@@ -7,11 +7,10 @@ const icons = [
     'umbrella', 'gear', 'bolt', 'car', 'gift', 'ghost', 'bell',
     'tree', 'sun', 'feather', 'fish', 'droplet'
 ]
-const cardImagesObj = Object.fromEntries(icons.map(
-    icon => [
+const cardImagesObj = Object.fromEntries(icons.map(icon => [
         icon,
         `<i class="fa-solid fa-${icon} fa-2x"></i>`
-    ]))
+]))
 
 const circleQuestion = '<i class="fa-solid fa-circle-question fa-2x"></i>'
 const cardImages = Object.values(cardImagesObj);
